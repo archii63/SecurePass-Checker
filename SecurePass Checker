@@ -28,6 +28,9 @@ def check_password_strength(password: str) -> str:
     if not re.search(r"[!@#$%^&*(),.?\":{}|<>]", password):
         return "Medium: Add special characters to make it stronger."
 
+    if len(password) < 8:
+        return "Weak: Password must be at least 8 characters long."
+
     return "Strong: Your password is secure."
 
 
