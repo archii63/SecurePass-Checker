@@ -33,6 +33,9 @@ def check_password_strength(password: str) -> str:
 
     return "Strong: Your password is secure."
 
+def check_password_strength(password: str) -> str:
+    """
+    Evaluate the strength of a password.
 
 def main():
     print("SecurePass Checker")
