@@ -36,7 +36,8 @@ def check_password_strength(password: str) -> str:
 def check_password_strength(password: str) -> str:
     """
     Evaluate the strength of a password.
-
+ if len(password) < 8:
+        return "Weak: Password must be at least 8 characters long."
 def main():
     print("SecurePass Checker")
     print("------------------")
