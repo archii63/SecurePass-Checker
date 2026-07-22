@@ -34,6 +34,9 @@ def check_password_strength(password: str) -> str:
         return "Weak: Password must contain at least one lowercase letter."
 
 
+    if not re.search(r"[0-9]", password):
+        return "Weak: Password must contain at least one number."
+
 def check_password_strength(password: str) -> str:
     """
     Evaluate the strength of a password.
